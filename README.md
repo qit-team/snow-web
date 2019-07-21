@@ -4,8 +4,8 @@
 [![Language](https://img.shields.io/badge/Language-Go-blue.svg)](https://golang.org/)
 [![GoDoc](https://godoc.org/github.com/qit-team/snow?status.svg)](https://godoc.org/github.com/qit-team/snow)
 
-## Snow
-Snow是一套简单易用的Go语言业务框架，整体逻辑设计简洁，支持HTTP服务、队列调度和任务调度等常用业务场景模式。
+## Snow-Web
+基于Snow Framework构建的WebApp的开发框架。 Snow是一套简单易用的Go语言业务框架，整体逻辑设计简洁，支持HTTP服务、队列调度和任务调度等常用业务场景模式。
 
 ## Goals
 我们致力于让PHPer更方便地切入到Go语言开发，在业务框架选择上贴合PHP主流框架的设计思想，以更低的学习成本快速熟悉框架，致力于业务逻辑的开发。
@@ -21,6 +21,10 @@ Snow是一套简单易用的Go语言业务框架，整体逻辑设计简洁，�
 - Logger: 基于[logrus](github.com/sirupsen/logrus)进行封装，内嵌上下文通用数据采集和trace_id追踪；
 - Request and Response：定义输入和输出数据实体格式；
 - Curl: 简单易用的Curl请求库；
+- React: 默认使用react构建前端，集成了标准的构建体系基于 [create-react-app](https://facebook.github.io/create-react-app)
+- Redux: 使用[Redux](https://github.com/reduxjs/redux)进行状态管理
+- Antd : 基于 Ant Design 设计体系的 React UI 组件库
+
 
 
 ## Quick start
@@ -44,7 +48,17 @@ sh build/shell/build.sh
 build/bin/snow
 ```
 
+run UI :
+
+```
+yarn install
+yarn start 
+```
+
+<img src='docs/img/ui.jpg'>
+
 ### Test demo
+
 ```
 curl "http://127.0.0.1:8000/hello"  #返回json串输出
 ```
@@ -57,8 +71,9 @@ curl "http://127.0.0.1:8000/hello"  #返回json串输出
 
 ## Contributors
 
+- Eric Wgr ([@ericwgr](https://github.com/ericwgr)) 
 - Tinson Ho ([@tinson](https://github.com/hetiansu5))
-- ACoderHIT
+- ACoderHIT 
 - xiongwilee ([@xiongwilee](https://github.com/xiongwilee))
 - KEL ([@deathkel](https://github.com/deathkel))
 - peterwu
