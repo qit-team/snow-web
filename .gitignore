@@ -2,3 +2,15 @@
 /vendor
 /.env
 !/.env.example
+
+
+# IDE
+.idea
+/.vscode
+
+# log
+logs/
+
+# dependencies
+/node_modules
+

@@ -71,7 +71,7 @@ module.exports = {
   appPath: resolveApp('.'),
   appBuild: resolveApp('build/ui'),              //修改
   appPublic: resolveApp('ui/public'),    //修改
-  appHtml: resolveApp('ui/public/index.html'), //修改
+  appHtml: resolveApp('ui/index.html'), //修改
   appIndexJs: resolveModule(resolveApp, 'ui/index'), //修改
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('ui'),

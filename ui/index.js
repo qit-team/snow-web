@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Root, store } from './common';
+import store from './common/redux';
+import Root from './common/root';
 import { Provider } from 'react-redux';
 
 ReactDOM.render(
