@@ -58,7 +58,7 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.2.0",
     "antd": "^3.20.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-sticky": "^6.0.3",
